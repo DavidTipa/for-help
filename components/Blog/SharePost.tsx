@@ -4,12 +4,12 @@ const SharePost = () => {
       <div className="mt-11 flex flex-wrap gap-4 md:items-center md:justify-between md:gap-0">
         <ul className="flex items-center gap-6">
           <li>
-            <p className="text-black dark:text-white">Share On:</p>
+            <p className="text-black dark:text-white">comparte en:</p>
           </li>
           <li>
             <a href="#" aria-label="social link">
               <svg
-                className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -33,7 +33,7 @@ const SharePost = () => {
           <li>
             <a href="#" aria-label="social link">
               <svg
-                className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ const SharePost = () => {
           <li>
             <a href="#" aria-label="social link">
               <svg
-                className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -81,7 +81,7 @@ const SharePost = () => {
           <li>
             <a href="#" aria-label="social link">
               <svg
-                className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -107,13 +107,13 @@ const SharePost = () => {
           <li>
             <a
               href="#"
-              className="pr-2 duration-300 ease-in-out hover:text-primary"
+              className="hover:text-primary pr-2 duration-300 ease-in-out"
             >
-              #business
+              #Buap
             </a>
 
-            <a href="#" className="duration-300 ease-in-out hover:text-primary">
-              #saas
+            <a href="#" className="hover:text-primary duration-300 ease-in-out">
+              #Universidad
             </a>
           </li>
         </ul>
