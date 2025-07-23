@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className="md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥 For-help - A Complete SaaS Web Template
+                🔥 For-help
               </h4>
               <h1 className="xl:text-hero mb-5 pr-16 text-3xl font-bold text-black dark:text-white">
                 Plataforma de apoyo para estudiantes foráneos
