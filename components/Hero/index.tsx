@@ -14,45 +14,49 @@ const Hero = () => {
       <section className="overflow-hidden pt-35 pb-20 md:pt-40 xl:pt-46 xl:pb-25">
         <div className="max-w-c-1390 mx-auto px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className="md:w-1/2">
-              <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥 For-help
-              </h4>
-              <h1 className="xl:text-hero mb-5 pr-16 text-3xl font-bold text-black dark:text-white">
-                Plataforma de apoyo para estudiantes foráneos
-                <span className="before:bg-titlebg dark:before:bg-titlebgdark relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full">
-                  BUAP
+           <div className="md:w-1/2">
+            <h4 className="mb-4 text-xl font-semibold text-primary animate-bounce">
+              Apoyo real para estudiantes foráneos
+            </h4>
+              <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-black dark:text-white mb-6 leading-tight">
+                Bienvenido a
+                <span className="relative ml-2 inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600 drop-shadow-sm uppercase tracking-wider">
+                  FOR-HELP
+                  <span className="absolute -bottom-1 left-0 h-1 w-full bg-primary/40 dark:bg-primary/60 -z-10 rounded-sm animate-pulse"></span>
                 </span>
+                <br />
+                tu plataforma de apoyo foráneo BUAP
               </h1>
-              <p>
-                For-Help es una plataforma pensada para facilitar la adaptación
-                de estudiantes foráneos de la BUAP, ofreciendo recursos útiles,
-                recomendaciones y apoyo entre compañeros.
+            <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-xl leading-relaxed">
+              Una plataforma pensada para facilitar tu llegada, adaptación y
+              experiencia universitaria. Recomendaciones útiles, herramientas clave y apoyo real, todo en un solo lugar.
+            </p>
+
+            <div className="mt-6">
+              <form onSubmit={handleSubmit}>
+                <div className="flex flex-wrap gap-4">
+                  <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    type="text"
+                    placeholder="Ingresa tu matrícula BUAP"
+                    className="w-full sm:w-auto border-stroke shadow-sm focus:border-primary dark:border-strokedark dark:focus:border-primary rounded-full border px-6 py-3 focus:outline-none dark:bg-black dark:shadow-none"
+                  />
+                  <button
+                    aria-label="get started button"
+                    className="bg-primary hover:bg-primary/90 text-white font-medium px-8 py-3 rounded-full transition duration-300 ease-in-out"
+                  >
+                    Explorar
+                  </button>
+                </div>
+              </form>
+
+              <p className="mt-5 text-base text-black dark:text-white italic">
+                No necesitas registrarte. Accede directamente a la ayuda que necesitas.
               </p>
-
-              <div className="mt-10">
-                <form onSubmit={handleSubmit}>
-                  <div className="flex flex-wrap gap-5">
-                    <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      type="text"
-                      placeholder="Ingresa tu matrícula BUAP"
-                      className="border-stroke shadow-solid-2 focus:border-primary dark:border-strokedark dark:focus:border-primary rounded-full border px-6 py-2.5 focus:outline-hidden dark:bg-black dark:shadow-none"                    />
-                    <button
-                      aria-label="get started button"
-                      className="hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out"
-                    >
-                      Explorar
-                    </button>
-                  </div>
-                </form>
-
-                <p className="mt-5 text-black dark:text-white">
-                  No necesitas registrarte. Accede a la ayuda directamente.
-                </p>
-              </div>
             </div>
+          </div>
+
 
             <div className="animate_right hidden md:w-1/2 lg:block">
               <div className="relative 2xl:-mr-7.5">

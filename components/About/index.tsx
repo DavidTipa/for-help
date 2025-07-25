@@ -67,15 +67,14 @@ const About = () => {
                 BUAP
               </span>
               <h2 className="xl:text-hero relative mb-6 text-3xl font-bold text-black dark:text-white">
-                Una solución completa para
+                Descubre cómo
                 <span className="before:bg-titlebg dark:before:bg-titlebgdark relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full">
-                  Estudiantes Foráneos
-                </span>
+                  For Help
+                </span>{" "}
+                transforma tu experiencia universitaria
               </h2>
               <p>
-                Conecta, resuelve dudas, encuentra alojamiento, y accede a
-                información útil para adaptarte a la vida universitaria en la
-                BUAP.
+                 Nuestra misión es hacer más fácil tu llegada y estancia en Puebla. Aquí encuentras respuestas, compañía, tips reales y todo lo que nos hubiera gustado tener al llegar como foráneos.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -86,11 +85,10 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="text-metatitle2 mb-0.5 text-black dark:text-white">
-                    Apoyo real para tu día a día
+                      Una comunidad hecha por y para estudiantes
                   </h3>
                   <p>
-                    Consejos útiles, comunidad activa y recursos que sí
-                    importan.
+                    No estás solo. For Help conecta foráneos como tú para compartir experiencias, resolver dudas y crear redes de apoyo reales.
                   </p>
                 </div>
               </div>
@@ -102,11 +100,10 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="text-metatitle2 mb-0.5 text-black dark:text-white">
-                    Plataforma personalizable
+                      Recursos prácticos.
                   </h3>
                   <p>
-                    Tu experiencia mejora con base en lo que necesitas y
-                    compartes.
+                    Desde recomendaciones de comida y transporte, hasta dónde hacer trámites o encontrar depa.
                   </p>
                 </div>
               </div>
@@ -142,16 +139,30 @@ const About = () => {
                 Una nueva etapa en la BUAP
               </h4>
               <h2 className="xl:text-hero relative mb-6 text-3xl font-bold text-black dark:text-white">
-                Con todas las {"   "}
+                Inicia esta nueva etapa con{" "}
                 <span className="before:bg-titlebg2 dark:before:bg-titlebgdark relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full">
-                  herramientas esenciales
+                  las herramientas correctas
                 </span>
               </h2>
               <p>
-                Desde alojamiento y comida hasta rutas de transporte y grupos
-                estudiantiles, te damos lo necesario para que te sientas en
-                casa.
+                Desde mapas interactivos hasta foros de apoyo y recomendaciones locales. For Help está diseñado para acompañarte desde el primer día.
               </p>
+              <a
+                href="#"
+                className="group hover:text-primary dark:hover:text-primary mt-7.5 inline-flex items-center gap-2.5 text-black dark:text-white"
+              >
+                <span className="duration-300 group-hover:pr-2">
+                  Ver funcionalidades
+                </span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="currentColor"
+                >
+                  <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
+                </svg>
+              </a>
               <div>
                 <a
                   href="#"
