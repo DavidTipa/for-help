@@ -25,7 +25,9 @@ const Hero = () => {
                 </span>
               </h1>
               <p>
-                For-Help es una plataforma pensada para facilitar la adaptación de estudiantes foráneos de la BUAP, ofreciendo recursos útiles, recomendaciones y apoyo entre compañeros.
+                For-Help es una plataforma pensada para facilitar la adaptación
+                de estudiantes foráneos de la BUAP, ofreciendo recursos útiles,
+                recomendaciones y apoyo entre compañeros.
               </p>
 
               <div className="mt-10">
@@ -36,8 +38,7 @@ const Hero = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       type="text"
                       placeholder="Ingresa tu matrícula BUAP"
-                      className="rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
-                    />
+                      className="border-stroke shadow-solid-2 focus:border-primary dark:border-strokedark dark:focus:border-primary rounded-full border px-6 py-2.5 focus:outline-hidden dark:bg-black dark:shadow-none"                    />
                     <button
                       aria-label="get started button"
                       className="hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out"
