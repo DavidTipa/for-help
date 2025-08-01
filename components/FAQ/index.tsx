@@ -4,12 +4,18 @@ import Image from "next/image";
 import { useState } from "react";
 import FAQItem from "./FAQItem";
 import faqData from "./faqData";
+import MapSection from "./MapSection"; // Importe el nuevo componente
 
 const FAQ = () => {
   const [activeFaq, setActiveFaq] = useState(1);
+  const [showMap, setShowMap] = useState(false); // Estado para alternar entre FAQ y Mapa
 
   const handleFaqToggle = (id: number) => {
     activeFaq === id ? setActiveFaq(0) : setActiveFaq(id);
+  };
+
+  const toggleView = () => {
+    setShowMap(!showMap);
   };
 
   return (
@@ -51,20 +57,23 @@ const FAQ = () => {
               className="animate_left md:w-2/5 lg:w-1/2"
             >
               <span className="font-medium uppercase text-black dark:text-white">
-                OUR FAQS
+                {showMap ? " MAPA DE RUTAS" : "RUTAS DESTACADAS"}
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Frequently Asked
+                {showMap 
+                  ? "Encuentra las opiniones de los usuarios sobre las rutas mas populares"
+                  : " Explora el mapa de rutas de la BUAP y sus alrededores"}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Questions
                 </span>
               </h2>
 
-              <a
-                href="#"
+              <button
+                onClick={toggleView}
                 className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover:pr-2">Know More</span>
+                <span className="duration-300 group-hover:pr-2">
+                  {showMap ? "Ver rutas destacadas" : "Ver Mapa de Rutas"}
+                </span>
                 <svg
                   width="14"
                   height="14"
@@ -76,7 +85,7 @@ const FAQ = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
+              </button>
             </motion.div>
 
             <motion.div
@@ -97,14 +106,18 @@ const FAQ = () => {
               viewport={{ once: true }}
               className="animate_right md:w-3/5 lg:w-1/2"
             >
-              <div className="rounded-lg bg-white shadow-solid-8 dark:border dark:border-strokedark dark:bg-blacksection">
-                {faqData.map((faq, key) => (
-                  <FAQItem
-                    key={key}
-                    faqData={{ ...faq, activeFaq, handleFaqToggle }}
-                  />
-                ))}
-              </div>
+              {showMap ? (
+                <MapSection />
+              ) : (
+                <div className="rounded-lg bg-white shadow-solid-8 dark:border dark:border-strokedark dark:bg-blacksection">
+                  {faqData.map((faq, key) => (
+                    <FAQItem
+                      key={key}
+                      faqData={{ ...faq, activeFaq, handleFaqToggle }}
+                    />
+                  ))}
+                </div>
+              )}
             </motion.div>
           </div>
         </div>
