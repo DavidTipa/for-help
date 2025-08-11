@@ -1,67 +1,76 @@
-export default function GuiasUniversitarias() {
-  const guias = [
+export default function UniversityGuide() {
+  const guides = [
     {
-      titulo: "Pago de poliza",
-      descripcion: "Paso a paso de como imprimir y pagar tu poliza",
-      imagen: "/imagenes/salon.jpg",
-      link: "/guias/salon"
+      title: "Inscripción de materias",
+      description: "Inscribe tus materias de forma correcta y sin complicaciones.",
+      image: "/images/guias/materias.png"
     },
     {
-      titulo: "Inscripcion de materias",
-      descripcion: "Inscribe tus materias de manera correcta y sin duda.",
-      imagen: "/imagenes/salon.jpg",
-      link: "/guias/salon"
+      title: "Reposición de Credencial",
+      description: "Solicita una nueva credencial de estudiante en caso de pérdida o daño.",
+      image: "/images/guias/credencial.png"
     },
     {
-      titulo: "Reposición de credencial",
-      descripcion: "Pasos y requisitos para reponer tu credencial BUAP.",
-      imagen: "/imagenes/credencial.jpg",
-      link: "/guias/credencial"
+      title: "Como descargar tu Krdex simple",
+      description: "Como descargar y imprimir tu Kardex simple",
+      image: "/images/guias/kardex.jpg"
     },
     {
-      titulo: "Cómo usar el Lobo Bus",
-      descripcion: "Horarios, rutas y tips para aprovechar el transporte universitario.",
-      imagen: "/imagenes/lobobus.jpg",
-      link: "/guias/lobobus"
+      title: "Como descargar tu Constancia de Estudios",
+      description: "Como descargar y imprimir tu Constancia",
+      image: "/images/guias/kardex.jpg"
     },
     {
-      titulo: "Identificar tu salón rápidamente",
-      descripcion: "Ubica tu salón sin perderte en la BUAP.",
-      imagen: "/imagenes/salon.jpg",
-      link: "/guias/salon"
+      title: "Cómo usar el Lobo Bus",
+      description: "Guía para utilizar el transporte universitario de manera eficiente.",
+      image: "/images/guias/lobobus.jpg"
     },
     {
-      titulo: "Convocatorias o Eventos interesantes",
-      descripcion: "Mantente al tanto de lo que sucede en la BUAP y no te pierdas de nada",
-      imagen: "/imagenes/salon.jpg",
-      link: "/guias/salon"
+      title: "Cómo usar la Lobo Bici",
+      description: "Utiliza de forma correcta las bicicletas de la universidad.",
+      image: "/images/guias/Lobobici.png"
+    },
+    {
+      title: "Becas BUAP",
+      description: "Enterate y registarte de las becas en BUAP.",
+      image: "/images/guias/becas.png"
+    },
+    {
+      title: "Identificar tu salón rápidamente",
+      description: "Trucos y consejos para encontrar tu salón sin perderte.",
+      image: "/images/guias/salon.png"
+    },
+        {
+      title: "Convocatorias y eventos",
+      description: "Entérate de las últimas convocatorias y actividades BUAP.",
+      image: "/images/guias/eventos.jpg"
     }
   ];
 
   return (
-    <section className="pt-24 p-6 bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen">
-      <h1 className="text-4xl font-bold text-blue-900 mb-8 text-center">
-        Guías Universitarias BUAP
-      </h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {guias.map((guia, index) => (
-          <a
-            key={index}
-            href={guia.link}
-            className="bg-white rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
-          >
-            <img
-              src={guia.imagen}
-              alt={guia.titulo}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-5">
-              <h2 className="text-xl font-semibold text-gray-800">{guia.titulo}</h2>
-              <p className="text-gray-600 mt-2">{guia.descripcion}</p>
+    <section className="bg-gray-50 py-12">
+      <div className="max-w-4xl mx-auto px-4">
+        <h2 className="text-5xl font-extrabold text-center mt-24 mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-600 drop-shadow-lg tracking-wide">
+          Guía Universitaria BUAP
+        </h2>
+        <div className="space-y-6">
+          {guides.map((guide, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex items-center gap-6"
+            >
+              <img
+                src={guide.image}
+                alt={guide.title}
+                className="w-32 h-32 object-cover rounded-lg"
+              />
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">{guide.title}</h3>
+                <p className="text-gray-600 mt-2">{guide.description}</p>
+              </div>
             </div>
-          </a>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
