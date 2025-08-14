@@ -61,7 +61,7 @@ const Hero = () => {
             <div className="animate_right hidden md:w-1/2 lg:block">
               <div className="relative 2xl:-mr-7.5">
                 <Image
-                  src="/images/shape/shape-01.png"
+                  src="/images/shape/bienvenida.jpg"
                   alt="shape"
                   width={46}
                   height={246}

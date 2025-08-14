@@ -3,45 +3,24 @@ import { Feature } from "@/types/feature";
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: "/images/icon/icon-01.svg",
-    title: "Crafted for SaaS",
+    icon: "/images/ods4-icon.svg", // coloca aquí un ícono o la imagen de ODS 4
+    title: "Educación inclusiva",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Fomentamos el acceso equitativo a recursos para estudiantes foráneos, sin importar su origen.",
   },
   {
     id: 2,
-    icon: "/images/icon/icon-02.svg",
-    title: "High-quality Design",
+    icon: "/images/support-icon.svg",
+    title: "Apoyo integral",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Ofrecemos orientación y herramientas para que los foráneos continúen sus estudios con calidad.",
   },
   {
     id: 3,
-    icon: "/images/icon/icon-03.svg",
-    title: "Next.js 13 + TypeScript",
+    icon: "/images/community-icon.svg",
+    title: "Comunidad solidaria",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-  },
-  {
-    id: 4,
-    icon: "/images/icon/icon-04.svg",
-    title: "Sanity Blog and Docs",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-  },
-  {
-    id: 5,
-    icon: "/images/icon/icon-05.svg",
-    title: "DB, Auth and Stripe",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-  },
-  {
-    id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Regular Free Updates",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Conectamos a estudiantes para compartir experiencias, consejos y apoyo mutuo.",
   },
 ];
 
