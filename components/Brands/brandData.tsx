@@ -1,47 +1,42 @@
 import { Brand } from "@/types/brand";
+import { FaBed, FaUtensils, FaBus, FaBook, FaTheaterMasks, FaHeartbeat } from "react-icons/fa";
 
 const brandData: Brand[] = [
   {
-    id: 0.25,
-    name: "Client",
+    id: 0.1,
+    name: "Alojamiento",
     href: "#",
-    image: "/images/brand/brand-light-01.svg",
-    imageLight: "/images/brand/brand-dark-01.svg",
+    icon: FaBed,
+  },
+  {
+    id: 0.2,
+    name: "Comida",
+    href: "#",
+    icon: FaUtensils,
   },
   {
     id: 0.3,
-    name: "Client",
+    name: "Transporte",
     href: "#",
-    image: "/images/brand/brand-light-02.svg",
-    imageLight: "/images/brand/brand-dark-02.svg",
+    icon: FaBus,
   },
   {
     id: 0.4,
-    name: "Client",
+    name: "Apoyo Académico",
     href: "#",
-    image: "/images/brand/brand-light-03.svg",
-    imageLight: "/images/brand/brand-dark-03.svg",
+    icon: FaBook,
   },
   {
     id: 0.5,
-    name: "Client",
+    name: "Eventos y Cultura",
     href: "#",
-    image: "/images/brand/brand-light-04.svg",
-    imageLight: "/images/brand/brand-dark-04.svg",
+    icon: FaTheaterMasks,
   },
   {
     id: 0.6,
-    name: "Client",
+    name: "Salud y Bienestar",
     href: "#",
-    image: "/images/brand/brand-light-05.svg",
-    imageLight: "/images/brand/brand-dark-05.svg",
-  },
-  {
-    id: 0.7,
-    name: "Client",
-    href: "#",
-    image: "/images/brand/brand-light-06.svg",
-    imageLight: "/images/brand/brand-dark-06.svg",
+    icon: FaHeartbeat,
   },
 ];
 

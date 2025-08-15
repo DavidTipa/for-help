@@ -37,13 +37,13 @@ const About = () => {
               className="lg:w-1/2 text-center lg:text-left"
             >
               <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
-                Bienvenido a{" "}
+                ¿Qué es{" "}
                 <span className="bg-white text-purple-600 px-2 rounded">
-                  For Help BUAP
+                  For Help BUAP?
                 </span>
               </h2>
               <p className="mt-4 text-lg opacity-90">
-                Tu plataforma para sobrevivir, conectar y disfrutar la vida universitaria como foráneo.
+                Una plataforma para sobrevivir, conectar y disfrutar la vida universitaria como foráneo.
               </p>
 
               {/* Iconos con puntos clave */}

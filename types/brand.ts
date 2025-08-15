@@ -1,7 +1,8 @@
+import { IconType } from "react-icons";
+
 export type Brand = {
   id: number;
   name: string;
   href: string;
-  image: string;
-  imageLight: string;
+  icon: IconType;
 };
